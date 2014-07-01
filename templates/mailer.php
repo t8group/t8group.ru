@@ -11,7 +11,7 @@
         // Check that data was sent to the mailer.
         if ( empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
             // Set a 400 (bad request) response code and exit.
-            http_response_code(400);
+            header("HTTP/1.0 400 Bad Request");
             echo "Пожалуйста, заполните форму полностью и повторите отправку.";
             exit;
         }
@@ -34,17 +34,17 @@
         // Send the email.
         if (mail($recipient, $subject, $email_content, $email_headers)) {
             // Set a 200 (okay) response code.
-            http_response_code(200);
+            header("HTTP/1.0 200 OK");
             echo "Спасибо! Ваше сообщение было отправлено.";
         } else {
             // Set a 500 (internal server error) response code.
-            http_response_code(500);
+            header("HTTP/1.0 500 Internal Server Error");
             echo "Что-то пошло не так! Ваше сообщение не может быть доставлено.";
         }
 
     } else {
         // Not a POST request, set a 403 (forbidden) response code.
-        http_response_code(403);
+        header("HTTP/1.0 403 Forbidden");
         echo "Во время отправки произошла ошибка, попробуйте позднее.";
     }
 
