@@ -1,5 +1,7 @@
-## Sassified Bootstrap for Mixture
+# Сайт t8group.ru
 
-This is a quick and simple setup for using [Bootstrap - Sass](https://github.com/twbs/bootstrap-sass) in Mixture.
+Для билда понадобится [mixture.io](http://mixture.io)
 
-It currently uses Bootstrap-Sass v3.1.0.2, and has Autoprefixer activated.
+___________
+
+Текущий билд находится в /converted-html
