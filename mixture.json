@@ -32,5 +32,5 @@
   "templateDirectory": "templates",
   "type": "mixture",
   "useCompass": false,
-  "optimizeSvg": false
+  "optimizeSvg": true
 }
