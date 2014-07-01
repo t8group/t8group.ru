@@ -1,0 +1,38 @@
+<div class="navbar navbar-default navbar-fixed-top"
+        data-0="background-color:rgba(255,255,255,0); border-color: rgba(255,255,255,0)"
+        data-350="background-color:rgba(255,255,255,0); border-color: rgba(255,255,255,0)"
+        data-450="background-color:rgba(255,255,255,1); border-color: rgba(230,230,230,1)">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand text-hide" href="/">T8</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li {% if mixture.url == 'index' %}class="active"{% endif %}><a href="/">Услуги</a></li>
+            <li {% if mixture.url == 'about' %}class="active"{% endif %}><a href="/about">О T8</a></li>
+            <!--<li {% if mixture.url == 'disclosure' %}class="active"{% endif %}><a href="/disclosure">Раскрытие данных</a></li>-->
+            <!--<li {% if mixture.url == 'support' %}class="active"{% endif %}><a href="/support">Поддержка и обучение</a></li>-->
+            <li {% if mixture.url == 'investors' %}class="active"{% endif %}><a href="/investors">Инвесторам</a></li>
+            <!--<li {% if mixture.url == 'analyze' %}class="active"{% endif %}><a href="/analyze">Анализ рынка</a></li>-->
+            <li {% if mixture.url == 'contact' %}class="active"{% endif %}><a href="/contact">Связь с нами</a></li>
+            <!--<li class="dropdown">-->
+              <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>-->
+              <!--<ul class="dropdown-menu">-->
+                <!--<li><a href="#">Action</a></li>-->
+                <!--<li><a href="#">Another action</a></li>-->
+                <!--<li><a href="#">Something else here</a></li>-->
+                <!--<li class="divider"></li>-->
+                <!--<li class="dropdown-header">Nav header</li>-->
+                <!--<li><a href="#">Separated link</a></li>-->
+                <!--<li><a href="#">One more separated link</a></li>-->
+              <!--</ul>-->
+            <!--</li>-->
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <!-- Title block allowing child pages to override -->
+        <title>{% block title %}t8{% endblock %}</title>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+        <!-- Styles -->
+        <script type="text/javascript" src="//use.typekit.net/oqz5tkc.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+        <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
+        {{ "jquery.min.js" | asset_url | script_tag }}
+        {{ "style.css" | asset_url | stylesheet_tag }}
+        <!-- Style block allowing child pages to inject their own styles -->
+        {% block styles %}{% endblock %}
+    </head>
+    <body class="loading">
+        {% block content %}{% endblock %}
+
+        {{ "bootstrap.min.js" | asset_url | script_tag }}
+        {{ "imagesloaded.js" | asset_url | script_tag }}
+        {{ "skrollr.js" | asset_url | script_tag }}
+        {% block scripts %}{% endblock %}
+
+    </body>
+</html>
