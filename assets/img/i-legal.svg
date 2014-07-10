@@ -3,13 +3,11 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="400px" height="400px" viewBox="0 0 400 400" enable-background="new 0 0 400 400" xml:space="preserve">
-<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="200.2524" y1="339.1172" x2="200.2524" y2="59.8507">
-	<stop  offset="0" style="stop-color:#28A8E0"/>
-	<stop  offset="1" style="stop-color:#1D76BB"/>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="200.2524" y1="363.9131" x2="200.2524" y2="135.7134">
+	<stop  offset="0" style="stop-color:#F6EB16"/>
+	<stop  offset="1" style="stop-color:#FCD900"/>
 </linearGradient>
-<path fill="url(#SVGID_1_)" d="M289.354,337.855H111.15c-27.374,0-49.565-22.19-49.565-49.564V110.087
-	c0-27.374,22.191-49.565,49.565-49.565h178.203c27.375,0,49.565,22.191,49.565,49.565v178.204
-	C338.919,315.665,316.729,337.855,289.354,337.855z"/>
+<rect x="61.585" y="60.521" fill="url(#SVGID_1_)" width="277.333" height="277.334"/>
 <g>
 	<path fill="#FFFFFF" d="M248.832,136.74h-21.678c-1.148,3.805-4.678,6.578-8.857,6.578h-36.088c-4.18,0-7.709-2.773-8.857-6.578
 		h-21.679c-5.11,0-9.253,4.143-9.253,9.253v135.938c0,5.11,4.143,9.254,9.253,9.254h97.16c5.111,0,9.254-4.144,9.254-9.254V145.993
