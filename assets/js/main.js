@@ -2,12 +2,13 @@
 
     // Setup variables
     $window = $(window);
-    $slide = $('.homeSlide');
+    $slide = $('.section--full');
     $body = $('body');
 
 
     //FadeIn all sections   
     $body.imagesLoaded( function() {
+        $body.addClass('loading');
         setTimeout(function() {
 
             // Resize sections
@@ -20,32 +21,38 @@
         }, 800);
     });
 
+
+
     adjustWindow();
 
     function adjustWindow(){
 
-        var s = skrollr.init({
-            forceHeight: false
-        });
+        if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
 
-        // Refresh Skrollr after resizing our sections
-        s.refresh($('.homeSlide'));
+            var s = skrollr.init(
+            //{
+            //    forceHeight: false
+            //}
+
+            );
+        }
 
 
         // Get window size
         winH = $window.height();
 
-        // Keep minimum height 550
-        if(winH <= 550) {
-            winH = 550;
-        }
+        //Keep minimum height 550
+        //if(winH <= 550) {
+        //    winH = 550;
+        //}
 
         // Resize our slides
         $slide.height(winH);
 
         // Refresh Skrollr after resizing our sections
-
-
+        if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)) {
+            s.refresh($slide);
+        }
     }
 
 
