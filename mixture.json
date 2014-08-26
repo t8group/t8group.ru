@@ -1,36 +1,45 @@
 {
+  "autoPrefixer": {
+    "active": true,
+    "browsers": [
+      "last 1 version",
+      "> 1%",
+      "ie 8",
+      "ie 7"
+    ],
+    "sourceMap": false
+  },
   "convertHtml": {
     "extension": ".html",
     "relativePaths": true
   },
-"autoPrefixer": {
-  "active": true,
-  "sourceMap": false,
-  "browsers": [
-  	"last 1 version", 
-  	"> 1%", 
-  	"ie 8", 
-  	"ie 7"
-  ]
-},
   "customRubyPath": null,
   "debug": false,
   "followLeader": true,
   "lintScripts": false,
+  "optimizeSvg": true,
   "preprocessorLocations": [
     "assets"
   ],
   "preprocessorScriptOutput": "assets/js",
   "preprocessorStyleOutput": "assets/css",
   "projectDescription": "Sass-Bootstrap based start",
-  "projectName": "t8-landing",
+  "projectName": "t8group.ru",
   "publishedId": null,
+  "sass": {
+    "cache": false,
+    "debugInfo": false,
+    "globbing": true,
+    "lineNumbers": false,
+    "outputStyle": "nested",
+    "sourceMap": false,
+    "useLibSass": true
+  },
   "serverHostname": "localhost",
   "serverPort": null,
   "templateDefaultLayout": "layout",
   "templateDefaultPage": "index",
   "templateDirectory": "templates",
   "type": "mixture",
-  "useCompass": false,
-  "optimizeSvg": true
+  "useCompass": false
 }
