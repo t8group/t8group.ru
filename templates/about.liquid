@@ -2,7 +2,6 @@
 {% block content %}
 {% include "navbar" %}
 
-<main>
 
     <section class="slide-1 wrapper-helper"
              data-0="background:rgba(0,0,0,1);"
@@ -19,11 +18,11 @@
              data-800="left:-10%"
              data-1500="opacity:1;"
              data-1800="left:-100%; top:6%; opacity:0"
-             data-11100="left:0%; top:-15%; opacity:0"
-             data-11400="left:0%; opacity:1">
+             <!--data-11100="left:0%; top:-15%; opacity:0"-->
+             <!--data-11400="left:0%; opacity:1">-->
         </div>
 
-        <div class="slide-1--card s-card"
+        <div class="slide-1--card s-card s-card--chevron"
              data-0="transform:scale(0.5); top:70%"
              data-500="transform:scale(0.2); left:0%"
              data-710="transform:scale(0.2); left:0%"
@@ -32,21 +31,21 @@
              data-1800="left:-100%; top:6%; opacity:0">
             <i class="glyphicon glyphicon-chevron-down" style="color: #ffffff"></i>
         </div>
-        <div class="slide-1--card s-card"
+        <div class="slide-1--card s-card s-card--this"
              data-0="display: none"
-             data-760="display: block; opacity:0; bottom:41%; left:7%"
-             data-830="opacity:1; left:10%;"
-             data-1500="left:10%;"
-             data-1800="left:-100%; opacity:0">это</div>
+             data-760="display: block; opacity:0; left:25%"
+             data-830="opacity:1; left:20%;"
+             data-1500="left:18%;"
+             data-1800="left:-50%; opacity:0">это</div>
 
         <div class="s-card"   style="width: 100%;"
              data-0="display:none;"
-             data-1500="left:100%; opacity:0; top: 40%; display:block"
+             data-1500="left:100%; opacity:0; display:block"
              data-1900="left:0%; opacity:1"
              data-2300="left:0%; opacity:1"
              data-2500="left:-100%; opacity:0">
             <div class="container" style="z-index: 1000;" >
-                <h1 style="font-size: 5em">Диверсифицированный издательский холдинг:</h1>
+                <h1>Диверсифицированный издательский холдинг:</h1>
             </div>
         </div>
         <!--<div class="s-card"  id="ripol"-->
@@ -59,7 +58,7 @@
         <!--</div>-->
         <div class="s-card"  style="width: 100%;"
              data-0="display:none;"
-             data-2300="left:100%; opacity:0; top: 40%; display:block"
+             data-2300="left:100%; opacity:0; display:block"
              data-2700="left:0%; opacity:1"
              data-3100="left:0%; opacity:1"
              data-3300="left:-100%; opacity:0">
@@ -71,7 +70,7 @@
 
         <div class="s-card"  style="width: 100%;"
              data-0="display:none;"
-             data-3100="left:100%; opacity:0; top: 40%; display:block"
+             data-3100="left:100%; opacity:0; display:block"
              data-3500="left:0%; opacity:1"
              data-3900="left:0%; opacity:1"
              data-4100="left:-100%; opacity:0">
@@ -83,7 +82,7 @@
 
         <div class="s-card"  style="width: 100%;"
              data-0="display:none;"
-             data-3900="left:100%; opacity:0; top: 40%; display:block"
+             data-3900="left:100%; opacity:0; display:block"
              data-4300="left:0%; opacity:1"
              data-4700="left:0%; opacity:1"
              data-4900="left:-100%; opacity:0">
@@ -94,7 +93,7 @@
 
         <div class="s-card"  style="width: 100%;"
              data-0="display:none;"
-             data-4700="left:100%; opacity:0; top: 40%; display:block"
+             data-4700="left:100%; opacity:0; display:block"
              data-5100="left:0%; opacity:1"
              data-5500="left:0%; opacity:1"
              data-5700="left:-100%; opacity:0">
@@ -106,7 +105,7 @@
 
         <div class="s-card"  style="width: 100%;"
              data-0="display:none;"
-             data-5500="left:100%; opacity:0; top: 40%; display:block"
+             data-5500="left:100%; opacity:0; display:block"
              data-5900="left:0%; opacity:1"
              data-6300="left:0%; opacity:1"
              data-6500="left:-100%; opacity:0">
@@ -118,7 +117,7 @@
 
         <div class="s-card"  style="width: 100%;"
              data-0="display:none;"
-             data-6300="left:100%; opacity:0; top: 40%; display:block"
+             data-6300="left:100%; opacity:0; display:block"
              data-6700="left:0%; opacity:1"
              data-7100="left:0%; opacity:1"
              data-7300="left:-100%; opacity:0">
@@ -129,7 +128,7 @@
 
         <div class="s-card"  style="width: 100%;"
              data-0="display:none;"
-             data-7100="left:100%; opacity:0; top: 40%; display:block"
+             data-7100="left:100%; opacity:0; display:block"
              data-7500="left:0%; opacity:1"
              data-7900="left:0%; opacity:1"
              data-8100="left:-100%; opacity:0">
@@ -140,7 +139,7 @@
 
         <div class="s-card"  style="width: 100%;"
              data-0="display:none;"
-             data-7900="left:100%; opacity:0; top: 40%; display:block; color: rgb(0,0,0)"
+             data-7900="left:100%; opacity:0; display:block; color: rgb(0,0,0)"
              data-8300="left:0%; opacity:1; color: rgb(255,255,255)"
              data-8700="left:0%; opacity:1">
             <div class="container" style="z-index: 1000;" >
@@ -156,15 +155,15 @@
 
 
     </section>
-</main>
 {% endblock %}
 {% block styles %}
 {{ "fixedpos.css" | asset_url | stylesheet_tag }}
 {% endblock %}
 {% block scripts %}
-
+{{ "imagesloaded.js" | asset_url | script_tag }}
+{{ "skrollr.js" | asset_url | script_tag }}
 <script type="text/javascript">
-    var s = skrollr.init();
+        skrollr.init();
 </script>
 
 {% endblock %}
