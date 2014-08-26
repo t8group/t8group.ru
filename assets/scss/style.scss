@@ -319,7 +319,6 @@ body > ymaps {
 
 
 #skrollr-body {
-//  margin-top: 100% ;
 }
 
 .section {
@@ -364,7 +363,7 @@ body > ymaps {
 }
 
 .section--outro {
-  background-color: #232323;
+//  background-color: #232323;
   .section__background {
     background-image: url('../img/intro-bg2.jpg');
     }
@@ -380,6 +379,10 @@ body > ymaps {
   font-weight: 200;
 }
 
+
+.s-card {
+  top: 40%;
+}
 
 
 // Media queries -------------------------------------------------------------------
@@ -411,14 +414,7 @@ body > ymaps {
 
     }
   }
-  .section--body{
-    margin-top: 0;
-    text-align: center;
-    .img-responsive {
-      width: 150px;
-      margin: 0 auto;
-    }
-  }
+
   h1{
     font-size: 30px;
     line-height: normal;
@@ -447,13 +443,73 @@ body > ymaps {
     font-size: 14px;
     line-height: normal;
   }
-  .timeline-centered .timeline-entry {
-    width: 100%;
-    float: none;
 
-  }
   #wrapper {
     margin-top: 1em;
   }
+  .section--body{
+    margin-top: 0;
+    .img-responsive {
+      width: 150px;
+      margin: 0 auto;
+    }
+  }
+  .s-card {
+    h1 {
+      font-size: 24px;
+    }
+    top:10%!important;
+  }
+}
+@media screen and (max-width: $screen-tablet){
+  .s-card {
+    h1 {
+      font-size: 24px;
+    }
+    top:30%;
+  }
+  .timeline-centered{
+    margin-top: 4em;
+  }
+  .timeline-centered .timeline-entry {
+    width: 100%;
+    float: none;
+    margin-bottom: 100px;
+    .timeline-time {
+      float: none!important;
+      position: absolute!important;
+      z-index: 99!important;
+      right: calc( 50% + 35px )!important;
+      top: -65px;
+      text-align: right!important;
+    }
+    .timeline-icon {
+      float: none!important;
+      position: absolute!important;
+      z-index: 99!important;
+      right: calc( 50% - 18px )!important;
+      top: -60px;
+    }
+    .timeline-label {
+      margin-left: 1em!important;
+      margin-right: 1em!important;
+    }
+    .timeline-label:after {
+//      border-color: transparent #F52781 transparent transparent!important;
+      left: 50%!important;
+      top: -13px!important;
+      margin-left: -7px!important;
+      transform: rotate(90deg)!important;
+    }
+    .timeline-entry-inner{
+      margin-left: 0!important;
+      margin-right: 0!important;
+    }
+  }
+  .timeline-centered .timeline-entry .begin {
+    margin-bottom: 0!important;
+  }
+
+
 }
 

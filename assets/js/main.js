@@ -27,7 +27,7 @@
 
     function adjustWindow(){
 
-        if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
+        if(!(/Android|iPhone|iPod|iPad|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
 
             var s = skrollr.init(
             //{
@@ -50,7 +50,7 @@
         $slide.height(winH);
 
         // Refresh Skrollr after resizing our sections
-        if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)) {
+        if(!(/Android|iPhone|iPod|iPad|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)) {
             s.refresh($slide);
         }
     }
